@@ -1,33 +1,15 @@
-package com.ing.zoo;
-
+package com.ing.zoo.animals;
+import com.ing.zoo.types.Omnivore;
 import java.util.Random;
 
-public class Pig {
-    public String name;
-    public String helloText;
-    public String eatText;
+public class Pig extends Omnivore {
     public String trick;
 
     public Pig()
     {
-    }
-
-    public void sayHello()
-    {
         helloText = "splash";
-        System.out.println(helloText);
-    }
-
-    public void eatLeaves()
-    {
         eatText = "munch munch oink";
-        System.out.println(eatText);
-    }
 
-    public void eatMeat()
-    {
-        eatText = "nomnomnom oink thx";
-        System.out.println(eatText);
     }
 
     public void performTrick()
@@ -44,4 +26,5 @@ public class Pig {
         }
         System.out.println(trick);
     }
+
 }
